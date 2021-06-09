@@ -53,7 +53,7 @@ public class MobileAdapter extends RecyclerView.Adapter<MobileAdapter.MyViewHold
         shimmerDrawable.setShimmer(shimmer);
 
         Glide.with(context).load(mobiles.get(position).getImage())
-                .apply(new RequestOptions().placeholder(shimmerDrawable))
+                .placeholder(shimmerDrawable)
                 .into(holder.imageView);
         holder.modelName.setText(mobiles.get(position).getModel());
         holder.price.setText("Price: $" + mobiles.get(position).getPrice());

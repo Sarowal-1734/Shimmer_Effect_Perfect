@@ -56,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
                 swipeRefreshLayout.setRefreshing(false);
             }
         });
-
     }
 
     //Creating asyncTask to get data from web/api
